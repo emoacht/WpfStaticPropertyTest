@@ -19,7 +19,7 @@ namespace WpfStaticPropertyTest
 		{
 			InitializeComponent();
 
-			var binding = new Binding("StaticName") { Mode = BindingMode.OneWay }; // Setting Source is not required.
+			var binding = new Binding("StaticName") { Mode = BindingMode.OneWay }; // Setting Binding.Source is not required.
 			this.TargetName.SetBinding(TextBlock.TextProperty, binding);
 		}
 
